@@ -1,0 +1,19 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.catsafefoods.twa",
+    "sha256_cert_fingerprints": [
+      "81:D5:5F:6A:12:B3:60:FF:B1:ED:BC:C9:15:CF:E6:C0:24:1D:D3:0C:D3:D7:AF:45:D3:02:26:92:92:3E:66:74"
+    ]
+  }
+}, {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.catsafefoods_paid.twa",
+    "sha256_cert_fingerprints": [
+      "72:B9:1A:5D:3A:B3:7F:57:F4:C3:AC:02:3B:DD:6F:DC:65:70:55:EB:D4:DE:22:E0:C1:7A:94:CE:CD:27:89:92"
+    ]
+  }
+}]
