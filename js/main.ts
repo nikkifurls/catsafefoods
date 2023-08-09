@@ -65,13 +65,14 @@ window.addEventListener('load', async () => {
 	}
 
 	// Show dogsafefoods.com promo.
-	showPromo('dogsafefoods', `Sharing food with your dog, too? Check out <a href='https://dogsafefoods.com' target='_blank'>dogsafefoods.com</a>!`);
+	showPromo(`Sharing food with your dog, too? Check out <a href='https://dogsafefoods.com' target='_blank'>dogsafefoods.com</a>!`, 'dogsafefoods.com-promo');
 });
 
 /**
  * Get search results.
- * @param query Query string.
- * @returns Search results.
+ * 
+ * @param {string} query Query string.
+ * @returns {Promise<Array<SearchResult>>} Search results.
  */
 const getSearchResults = async (query: string): Promise<Array<SearchResult>> => {
 
@@ -109,9 +110,9 @@ const getSearchResults = async (query: string): Promise<Array<SearchResult>> => 
 
 /**
  * Display search results.
- * @param query Query string.
- * @param results Search results. 
- * @returns void
+ * 
+ * @param {string} query Query string.
+ * @param {Array<SearchResult>} results Search results. 
  */
 const displayResults = (query: string, results: Array<SearchResult> = []): void => {
 

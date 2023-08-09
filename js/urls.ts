@@ -11,8 +11,8 @@ declare global {
 
 /**
  * Copies provided URL to clipboard if navigator.clipboard is available, otherwise displays a notification with the URL.
- * @param url 
- * @returns void
+ *
+ * @param {string} url Url to copy.
  */
 export const copyUrl = (url: string = window.location.href): void => {
 	if (!url) {
@@ -40,10 +40,10 @@ export const copyUrl = (url: string = window.location.href): void => {
 
 /**
  * Displays the native sharing mechanism for the device if navigator.share is available, otherwise displays a notification with the share data.
- * @param url 
- * @param title 
- * @param text 
- * @returns 
+ * 
+ * @param {string} url URL to share. Defaults to window.location.href.
+ * @param {string} title Title of website. Defaults to window.baseTitle. 
+ * @param {string} text Text to share. Defaults to window.baseDescription.
  */
 export const shareUrl = (url: string = window.location.href, title: string = window.baseTitle, text: string = window.baseDescription): void => {
 	if (navigator.share) {
@@ -55,6 +55,8 @@ export const shareUrl = (url: string = window.location.href, title: string = win
 			`<a class='button twitter' href='https://twitter.com/intent/tweet?text=${textEncoded}' title='Share on Twitter'><i class='fas fa-share-alt'></i>&nbsp;&nbsp;Twitter</a>` +
 			`<a class='button email' href='mailto:?subject=Check+out+${title}!&body=${textEncoded}' title='Share on Email'><i class='fas fa-share-alt'></i>&nbsp;&nbsp;Email</a>` +
 			`<a class='button copy' href='#' title='Copy' data-url='${url}'><i class='fas fa-copy'></i>&nbsp;&nbsp;Copy</button>`,
+			'',
+			'notification-share'
 		);
 	}
 
