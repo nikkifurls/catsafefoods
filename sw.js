@@ -296,7 +296,7 @@ const cacheFiles = [
 	"fonts/fontawesome/webfonts/fa-solid-900.ttf",
 	"fonts/fontawesome/webfonts/fa-solid-900.woff",
 	"fonts/fontawesome/webfonts/fa-solid-900.woff2",
-	"js/bundle.4e198f7cc98170b6316d.js",
+	"js/bundle.3888c41db6069b85b898.js",
 	"img/android-chrome-36x36.png", // Favicon, Android Chrome M39+ with 0.75 screen density
 	"img/android-chrome-48x48.png", // Favicon, Android Chrome M39+ with 1.0 screen density
 	"img/android-chrome-72x72.png", // Favicon, Android Chrome M39+ with 1.5 screen density
