@@ -1,118 +1,22 @@
 const cacheName = "cache67";
 const cacheFiles = [
 	"/",
-	"common.js",
+	"css/style.css",
 	"disclaimer.html",
+	"img/logo_nav.svg",
 	"index.html",
 	"manifest.json",
 	"privacy-policy.html",
 	"terms-and-conditions.html",
-	"logo_nav.svg",
-	"style.css",
-	"main.js",
 	"data.json",
-	"logo_header.svg",
-	"icon-thumbs-up.png",
-	"icon-thumbs-down.png",
+	"img/icon-thumbs-up.png",
+	"img/icon-thumbs-down.png",
 	"ads.txt",
 	"sellers.json",
 	"safe.html",
 	"unsafe.html",
 	"acai.html",
 	"alcohol.html",
-	"apples.html",
-	"apricots.html",
-	"artichokes.html",
-	"asparagus.html",
-	"aspartame.html",
-	"avocados.html",
-	"bananas.html",
-	"beans.html",
-	"beets.html",
-	"bell-peppers.html",
-	"blackberries.html",
-	"blueberries.html",
-	"bread.html",
-	"broccoli.html",
-	"brussels-sprouts.html",
-	"butter.html",
-	"cabbage.html",
-	"cantaloupe.html",
-	"melon.html",
-	"carrots.html",
-	"celery.html",
-	"cheese.html",
-	"cherries.html",
-	"chicken-meat.html",
-	"chocolate.html",
-	"coconut.html",
-	"coffee.html",
-	"corn.html",
-	"cranberries.html",
-	"cucumbers.html",
-	"dairy.html",
-	"dog-food.html",
-	"dragon-fruit.html",
-	"eggplant.html",
-	"eggs.html",
-	"figs.html",
-	"fish.html",
-	"fried-foods.html",
-	"garlic.html",
-	"gatorade.html",
-	"grapes.html",
-	"green-beans.html",
-	"guava.html",
-	"honey.html",
-	"hot-dogs.html",
-	"ice-cream.html",
-	"ice-cubes.html",
-	"hot-peppers.html",
-	"kale.html",
-	"kiwis.html",
-	"citrus-fruits.html",
-	"greens.html",
-	"mangoes.html",
-	"marshmallows.html",
-	"red-meat.html",
-	"bones.html",
-	"milk.html",
-	"mushrooms.html",
-	"nectarines.html",
-	"nuts.html",
-	"oatmeal.html",
-	"olives.html",
-	"onions.html",
-	"pomegranates.html",
-	"peaches.html",
-	"peanut-butter.html",
-	"peanuts.html",
-	"pears.html",
-	"peas.html",
-	"pickles.html",
-	"pineapples.html",
-	"plums.html",
-	"popcorn.html",
-	"pork.html",
-	"potatoes.html",
-	"pumpkin.html",
-	"quinoa.html",
-	"radishes.html",
-	"raspberries.html",
-	"rice.html",
-	"shellfish.html",
-	"spinach.html",
-	"squash.html",
-	"strawberries.html",
-	"sweet-potatoes.html",
-	"tomatoes.html",
-	"tuna.html",
-	"swordfish.html",
-	"turkey-meat.html",
-	"watermelon.html",
-	"xylitol.html",
-	"yogurt.html",
-	"zucchini.html",
 	"beer.html",
 	"champagne.html",
 	"gin.html",
@@ -121,6 +25,14 @@ const cacheFiles = [
 	"vodka.html",
 	"whiskey.html",
 	"wine.html",
+	"apples.html",
+	"apricots.html",
+	"artichokes.html",
+	"asparagus.html",
+	"aspartame.html",
+	"avocados.html",
+	"bananas.html",
+	"beans.html",
 	"black-beans.html",
 	"chickpeas.html",
 	"edamame.html",
@@ -128,14 +40,28 @@ const cacheFiles = [
 	"lentils.html",
 	"pinto-beans.html",
 	"soybeans.html",
+	"beets.html",
+	"bell-peppers.html",
+	"blackberries.html",
+	"blueberries.html",
+	"bread.html",
 	"bagels.html",
 	"croissants.html",
 	"english-muffins.html",
 	"pita-bread.html",
 	"pretzels.html",
 	"rolls.html",
+	"broccoli.html",
+	"brussels-sprouts.html",
+	"butter.html",
 	"margarine.html",
+	"cabbage.html",
+	"cantaloupe.html",
+	"melon.html",
 	"honeydew-melon.html",
+	"carrots.html",
+	"celery.html",
+	"cheese.html",
 	"asiago-cheese.html",
 	"blue-cheese.html",
 	"brie-cheese.html",
@@ -151,11 +77,26 @@ const cacheFiles = [
 	"pepper-jack-cheese.html",
 	"ricotta-cheese.html",
 	"swiss-cheese.html",
+	"cherries.html",
+	"chicken-meat.html",
 	"poultry.html",
+	"chocolate.html",
 	"cocoa.html",
+	"coconut.html",
 	"coconut-oil.html",
+	"coffee.html",
 	"tea.html",
+	"corn.html",
+	"cranberries.html",
+	"cucumbers.html",
+	"dairy.html",
+	"dog-food.html",
+	"dragon-fruit.html",
 	"pitaya.html",
+	"eggplant.html",
+	"eggs.html",
+	"figs.html",
+	"fish.html",
 	"salmon.html",
 	"whitefish.html",
 	"herring.html",
@@ -163,6 +104,7 @@ const cacheFiles = [
 	"flounder.html",
 	"arctic-char.html",
 	"sardines.html",
+	"fried-foods.html",
 	"chicken-fingers.html",
 	"chicken-nuggets.html",
 	"chips.html",
@@ -182,12 +124,25 @@ const cacheFiles = [
 	"spring-rolls.html",
 	"tater-tots.html",
 	"tortilla-chips.html",
+	"garlic.html",
+	"gatorade.html",
+	"grapes.html",
 	"raisins.html",
+	"green-beans.html",
 	"string-beans.html",
+	"guava.html",
+	"honey.html",
+	"hot-dogs.html",
+	"ice-cream.html",
 	"frozen-yogurt.html",
+	"ice-cubes.html",
+	"hot-peppers.html",
 	"chili-peppers.html",
 	"jalapeno-peppers.html",
 	"serrano-peppers.html",
+	"kale.html",
+	"kiwis.html",
+	"citrus-fruits.html",
 	"lemons.html",
 	"limes.html",
 	"oranges.html",
@@ -196,14 +151,19 @@ const cacheFiles = [
 	"kumquats.html",
 	"persimmons.html",
 	"tangerines.html",
+	"greens.html",
 	"arugula-greens.html",
 	"green-leaf-lettuce.html",
 	"iceberg-lettuce.html",
 	"lettuce-greens.html",
 	"red-leaf-lettuce.html",
 	"romaine-lettuce.html",
+	"mangoes.html",
+	"marshmallows.html",
+	"red-meat.html",
 	"beef.html",
 	"steak.html",
+	"bones.html",
 	"beef-bones.html",
 	"chicken-bones.html",
 	"ham-bones.html",
@@ -213,6 +173,8 @@ const cacheFiles = [
 	"pork-chop-bones.html",
 	"steak-bones.html",
 	"turkey-bones.html",
+	"milk.html",
+	"mushrooms.html",
 	"champignon-mushrooms.html",
 	"chanterelle-mushrooms.html",
 	"cremini-mushrooms.html",
@@ -222,6 +184,8 @@ const cacheFiles = [
 	"porcini-mushrooms.html",
 	"portabella-mushrooms.html",
 	"shiitake-mushrooms.html",
+	"nectarines.html",
+	"nuts.html",
 	"almonds.html",
 	"brazil-nuts.html",
 	"cashews.html",
@@ -232,6 +196,9 @@ const cacheFiles = [
 	"pine-nuts.html",
 	"pistachios.html",
 	"walnuts.html",
+	"oatmeal.html",
+	"olives.html",
+	"onions.html",
 	"chives.html",
 	"cipollini-onions.html",
 	"green-onions.html",
@@ -244,16 +211,34 @@ const cacheFiles = [
 	"vidalia-onions.html",
 	"white-onions.html",
 	"yellow-onions.html",
+	"pomegranates.html",
+	"peaches.html",
+	"peanut-butter.html",
+	"peanuts.html",
+	"pears.html",
+	"peas.html",
 	"green-peas.html",
 	"snow-peas.html",
 	"sugar-snap-peas.html",
+	"pickles.html",
+	"pineapples.html",
+	"plums.html",
 	"prunes.html",
+	"popcorn.html",
+	"pork.html",
 	"ham.html",
 	"sausage.html",
 	"bacon.html",
 	"salami.html",
 	"ribs.html",
+	"potatoes.html",
+	"pumpkin.html",
+	"quinoa.html",
+	"radishes.html",
+	"raspberries.html",
 	"black-raspberries.html",
+	"rice.html",
+	"shellfish.html",
 	"shrimp.html",
 	"crab.html",
 	"lobster.html",
@@ -261,12 +246,24 @@ const cacheFiles = [
 	"mussels.html",
 	"oysters.html",
 	"scallops.html",
+	"spinach.html",
+	"squash.html",
 	"acorn-squash.html",
 	"butternut-squash.html",
 	"spaghetti-squash.html",
 	"summer-squash.html",
 	"winter-squash.html",
 	"yellow-squash.html",
+	"strawberries.html",
+	"sweet-potatoes.html",
+	"tomatoes.html",
+	"tuna.html",
+	"swordfish.html",
+	"turkey-meat.html",
+	"watermelon.html",
+	"xylitol.html",
+	"yogurt.html",
+	"zucchini.html",
 	"fonts/roboto-slab/roboto-slab-700.eot",
 	"fonts/roboto-slab/roboto-slab-700.svg",
 	"fonts/roboto-slab/roboto-slab-700.ttf",
@@ -300,38 +297,39 @@ const cacheFiles = [
 	"fonts/fontawesome/webfonts/fa-solid-900.ttf",
 	"fonts/fontawesome/webfonts/fa-solid-900.woff",
 	"fonts/fontawesome/webfonts/fa-solid-900.woff2",
-	"android-chrome-36x36.png", // Favicon, Android Chrome M39+ with 0.75 screen density
-	"android-chrome-48x48.png", // Favicon, Android Chrome M39+ with 1.0 screen density
-	"android-chrome-72x72.png", // Favicon, Android Chrome M39+ with 1.5 screen density
-	"android-chrome-96x96.png", // Favicon, Android Chrome M39+ with 2.0 screen density
-	"android-chrome-144x144.png", // Favicon, Android Chrome M39+ with 3.0 screen density
-	"android-chrome-192x192.png", // Favicon, Android Chrome M39+ with 4.0 screen density
-	"android-chrome-256x256.png", // Favicon, Android Chrome M47+ Splash screen with 1.5 screen density
-	"android-chrome-384x384.png", // Favicon, Android Chrome M47+ Splash screen with 3.0 screen density
-	"android-chrome-512x512.png", // Favicon, Android Chrome M47+ Splash screen with 4.0 screen density
-	"apple-touch-icon.png", // Favicon, Apple default
-	"apple-touch-icon-57x57.png", // Apple iPhone, Non-retina with iOS6 or prior
-	"apple-touch-icon-60x60.png", // Apple iPhone, Non-retina with iOS7
-	"apple-touch-icon-72x72.png", // Apple iPad, Non-retina with iOS6 or prior
-	"apple-touch-icon-76x76.png", // Apple iPad, Non-retina with iOS7
-	"apple-touch-icon-114x114.png", // Apple iPhone, Retina with iOS6 or prior
-	"apple-touch-icon-120x120.png", // Apple iPhone, Retina with iOS7
-	"apple-touch-icon-144x144.png", // Apple iPad, Retina with iOS6 or prior
-	"apple-touch-icon-152x152.png", // Apple iPad, Retina with iOS7
-	"apple-touch-icon-180x180.png", // Apple iPhone 6 Plus with iOS8
-	"browserconfig.xml", // IE11 icon configuration file
-	"favicon.ico", // Favicon, IE and fallback for other browsers
-	"favicon-16x16.png", // Favicon, default
-	"favicon-32x32.png", // Favicon, Safari on Mac OS
-	"maskable_icon.png", // Favicon, maskable https://web.dev/maskable-icon
-	"monochrome_icon.png", // Favicon, monochrome https://web.dev/monochrome-icon
-	"mstile-70x70.png", // Favicon, Windows 8 / IE11
-	"mstile-144x144.png", // Favicon, Windows 8 / IE10
-	"mstile-150x150.png", // Favicon, Windows 8 / IE11
-	"mstile-310x150.png", // Favicon, Windows 8 / IE11
-	"mstile-310x310.png", // Favicon, Windows 8 / IE11
-	"safari-pinned-tab.svg", // Favicon, Safari pinned tab
-	"share.jpg" // Social media sharing
+	"js/bundle.fff9fc19378e9f275d34.js",
+	"img/android-chrome-36x36.png", // Favicon, Android Chrome M39+ with 0.75 screen density
+	"img/android-chrome-48x48.png", // Favicon, Android Chrome M39+ with 1.0 screen density
+	"img/android-chrome-72x72.png", // Favicon, Android Chrome M39+ with 1.5 screen density
+	"img/android-chrome-96x96.png", // Favicon, Android Chrome M39+ with 2.0 screen density
+	"img/android-chrome-144x144.png", // Favicon, Android Chrome M39+ with 3.0 screen density
+	"img/android-chrome-192x192.png", // Favicon, Android Chrome M39+ with 4.0 screen density
+	"img/android-chrome-256x256.png", // Favicon, Android Chrome M47+ Splash screen with 1.5 screen density
+	"img/android-chrome-384x384.png", // Favicon, Android Chrome M47+ Splash screen with 3.0 screen density
+	"img/android-chrome-512x512.png", // Favicon, Android Chrome M47+ Splash screen with 4.0 screen density
+	"img/apple-touch-icon.png", // Favicon, Apple default
+	"img/apple-touch-icon-57x57.png", // Apple iPhone, Non-retina with iOS6 or prior
+	"img/apple-touch-icon-60x60.png", // Apple iPhone, Non-retina with iOS7
+	"img/apple-touch-icon-72x72.png", // Apple iPad, Non-retina with iOS6 or prior
+	"img/apple-touch-icon-76x76.png", // Apple iPad, Non-retina with iOS7
+	"img/apple-touch-icon-114x114.png", // Apple iPhone, Retina with iOS6 or prior
+	"img/apple-touch-icon-120x120.png", // Apple iPhone, Retina with iOS7
+	"img/apple-touch-icon-144x144.png", // Apple iPad, Retina with iOS6 or prior
+	"img/apple-touch-icon-152x152.png", // Apple iPad, Retina with iOS7
+	"img/apple-touch-icon-180x180.png", // Apple iPhone 6 Plus with iOS8
+	"img/browserconfig.xml", // IE11 icon configuration file
+	"img/favicon.ico", // Favicon, IE and fallback for other browsers
+	"img/favicon-16x16.png", // Favicon, default
+	"img/favicon-32x32.png", // Favicon, Safari on Mac OS
+	"img/maskable_icon.png", // Favicon, maskable https://web.dev/maskable-icon
+	"img/monochrome_icon.png", // Favicon, monochrome https://web.dev/monochrome-icon
+	"img/mstile-70x70.png", // Favicon, Windows 8 / IE11
+	"img/mstile-144x144.png", // Favicon, Windows 8 / IE10
+	"img/mstile-150x150.png", // Favicon, Windows 8 / IE11
+	"img/mstile-310x150.png", // Favicon, Windows 8 / IE11
+	"img/mstile-310x310.png", // Favicon, Windows 8 / IE11
+	"img/safari-pinned-tab.svg", // Favicon, Safari pinned tab
+	"img/share.jpg" // Social media sharing
 ];
 
 // 1) INSTALL - triggers when service worker-controlled pages are accessed subsequently
