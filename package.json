@@ -1,6 +1,6 @@
 {
 	"name": "catsafefoods.com",
-	"version": "70",
+	"version": "71",
 	"description": "Sharing food with your cat? Make sure it's safe first",
 	"scripts": {
 		"build": "webpack --mode production"
